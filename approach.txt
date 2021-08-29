@@ -1,0 +1,14 @@
+In this model pandas, numpy and sklearn libraries were used.
+First, the datasets are read using pandas
+Then the numeric and categorical columns were found
+The NaN values in numeric columns were replaced with mean and in categorical columns with mode
+Then, Label Encoding is done on the 2 output columns
+One Hot Encoding os performed on the other categorical columns and new columns are generated and the original columns along with the first column is dropped.
+Then, the feature columns for train and test and target columns for train were selected by index
+These were then selected by using iloc function as array
+Then, we performed Logistic Regression, KNN and Decision Tree Models for comparison
+We used MultiOutputRegressor for multicolumn output to facilitate training
+We got the predicted values for each model.
+Then the dataset is reloaded to get the inverse transform for each model.
+Then the results were stored in the required format in a csv file for each model and uploaded. 
+The results were submitted and the Decision Tree was found to have the highest score.
